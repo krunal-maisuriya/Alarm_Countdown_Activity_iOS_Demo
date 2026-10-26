@@ -1,1 +1,1 @@
-Alarm_Countdown_Activity_iOS_Demo
+Alarm Countdown Activity iOS Demo
