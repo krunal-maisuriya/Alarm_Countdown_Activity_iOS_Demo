@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C91653A8308F4D7C00EE49B7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91653A7308F4D7B00EE49B7 /* WidgetKit.framework */; };
+		C91653AA308F4D7C00EE49B7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91653A9308F4D7C00EE49B7 /* SwiftUI.framework */; };
+		C91653B7308F4D7D00EE49B7 /* CountDownWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C91653A5308F4D7B00EE49B7 /* CountDownWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C91653B5308F4D7D00EE49B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9165384308F284600EE49B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C91653A4308F4D7B00EE49B7;
+			remoteInfo = CountDownWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C91653BC308F4D7D00EE49B7 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				C91653B7308F4D7D00EE49B7 /* CountDownWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C916538C308F284600EE49B7 /* Alarm_Live_Activity_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarm_Live_Activity_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C916539A308F307600EE49B7 /* Alarm-Live-Activity-Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Alarm-Live-Activity-Demo-Info.plist"; sourceTree = "<group>"; };
+		C91653A5308F4D7B00EE49B7 /* CountDownWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CountDownWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C91653A7308F4D7B00EE49B7 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C91653A9308F4D7C00EE49B7 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C91653B8308F4D7D00EE49B7 /* Exceptions for "CountDownWidget" folder in "CountDownWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C91653A4308F4D7B00EE49B7 /* CountDownWidgetExtension */;
+		};
+		C91653BE308F580000EE49B7 /* Exceptions for "Alarm_Live_Activity_Demo" folder in "CountDownWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Helpers/CountDownAttribute.swift,
+				Intents/AlarmActionIntent.swift,
+			);
+			target = C91653A4308F4D7B00EE49B7 /* CountDownWidgetExtension */;
+		};
+		C91653C2308F60FA00EE49B7 /* Exceptions for "CountDownWidget" folder in "Alarm_Live_Activity_Demo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CountDownWidgetLiveActivity.swift,
+			);
+			target = C916538B308F284600EE49B7 /* Alarm_Live_Activity_Demo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C916538E308F284600EE49B7 /* Alarm_Live_Activity_Demo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C91653BE308F580000EE49B7 /* Exceptions for "Alarm_Live_Activity_Demo" folder in "CountDownWidgetExtension" target */,
+			);
+			path = Alarm_Live_Activity_Demo;
+			sourceTree = "<group>";
+		};
+		C91653AB308F4D7C00EE49B7 /* CountDownWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C91653C2308F60FA00EE49B7 /* Exceptions for "CountDownWidget" folder in "Alarm_Live_Activity_Demo" target */,
+				C91653B8308F4D7D00EE49B7 /* Exceptions for "CountDownWidget" folder in "CountDownWidgetExtension" target */,
+			);
+			path = CountDownWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9165389308F284600EE49B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		C91653A2308F4D7B00EE49B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				C91653AA308F4D7C00EE49B7 /* SwiftUI.framework in Frameworks */,
+				C91653A8308F4D7C00EE49B7 /* WidgetKit.framework in Frameworks */,
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9165383308F284600EE49B7 = {
+			isa = PBXGroup;
+			children = (
+				C916539A308F307600EE49B7 /* Alarm-Live-Activity-Demo-Info.plist */,
+				C916538E308F284600EE49B7 /* Alarm_Live_Activity_Demo */,
+				C91653AB308F4D7C00EE49B7 /* CountDownWidget */,
+				C91653A6308F4D7B00EE49B7 /* Frameworks */,
+				C916538D308F284600EE49B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C916538D308F284600EE49B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C916538C308F284600EE49B7 /* Alarm_Live_Activity_Demo.app */,
+				C91653A5308F4D7B00EE49B7 /* CountDownWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C91653A6308F4D7B00EE49B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C91653A7308F4D7B00EE49B7 /* WidgetKit.framework */,
+				C91653A9308F4D7C00EE49B7 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C916538B308F284600EE49B7 /* Alarm_Live_Activity_Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9165397308F284800EE49B7 /* Build configuration list for PBXNativeTarget "Alarm_Live_Activity_Demo" */;
+			buildPhases = (
+				C9165388308F284600EE49B7 /* Sources */,
+				C9165389308F284600EE49B7 /* Frameworks */,
+				C916538A308F284600EE49B7 /* Resources */,
+				C91653BC308F4D7D00EE49B7 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C91653B6308F4D7D00EE49B7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C916538E308F284600EE49B7 /* Alarm_Live_Activity_Demo */,
+			);
+			name = Alarm_Live_Activity_Demo;
+			productName = Alarm_Live_Activity_Demo;
+			productReference = C916538C308F284600EE49B7 /* Alarm_Live_Activity_Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C91653A4308F4D7B00EE49B7 /* CountDownWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C91653B9308F4D7D00EE49B7 /* Build configuration list for PBXNativeTarget "CountDownWidgetExtension" */;
+			buildPhases = (
+				C91653A1308F4D7B00EE49B7 /* Sources */,
+				C91653A2308F4D7B00EE49B7 /* Frameworks */,
+				C91653A3308F4D7B00EE49B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				C91653AB308F4D7C00EE49B7 /* CountDownWidget */,
+			);
+			name = CountDownWidgetExtension;
+			productName = CountDownWidgetExtension;
+			productReference = C91653A5308F4D7B00EE49B7 /* CountDownWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9165384308F284600EE49B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2710;
+				LastUpgradeCheck = 2710;
+				TargetAttributes = {
+					C916538B308F284600EE49B7 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					C91653A4308F4D7B00EE49B7 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+				};
+			};
+			buildConfigurationList = C9165387308F284600EE49B7 /* Build configuration list for PBXProject "Alarm_Live_Activity_Demo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9165383308F284600EE49B7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C916538D308F284600EE49B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C916538B308F284600EE49B7 /* Alarm_Live_Activity_Demo */,
+				C91653A4308F4D7B00EE49B7 /* CountDownWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C916538A308F284600EE49B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		C91653A3308F4D7B00EE49B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9165388308F284600EE49B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		C91653A1308F4D7B00EE49B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C91653B6308F4D7D00EE49B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C91653A4308F4D7B00EE49B7 /* CountDownWidgetExtension */;
+			targetProxy = C91653B5308F4D7D00EE49B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C9165395308F284800EE49B7 /* Debug configuration for PBXProject "Alarm_Live_Activity_Demo" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = YUDL44V3JJ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9165396308F284800EE49B7 /* Release configuration for PBXProject "Alarm_Live_Activity_Demo" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = YUDL44V3JJ;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9165398308F284800EE49B7 /* Debug configuration for PBXNativeTarget "Alarm_Live_Activity_Demo" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YUDL44V3JJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Alarm-Live-Activity-Demo-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MkTech.Alarm-Live-Activity-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9165399308F284800EE49B7 /* Release configuration for PBXNativeTarget "Alarm_Live_Activity_Demo" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YUDL44V3JJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Alarm-Live-Activity-Demo-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MkTech.Alarm-Live-Activity-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C91653BA308F4D7D00EE49B7 /* Debug configuration for PBXNativeTarget "CountDownWidgetExtension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YUDL44V3JJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CountDownWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CountDownWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MkTech.Alarm-Live-Activity-Demo.CountDownWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C91653BB308F4D7D00EE49B7 /* Release configuration for PBXNativeTarget "CountDownWidgetExtension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YUDL44V3JJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CountDownWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CountDownWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MkTech.Alarm-Live-Activity-Demo.CountDownWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9165387308F284600EE49B7 /* Build configuration list for PBXProject "Alarm_Live_Activity_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9165395308F284800EE49B7 /* Debug configuration for PBXProject "Alarm_Live_Activity_Demo" */,
+				C9165396308F284800EE49B7 /* Release configuration for PBXProject "Alarm_Live_Activity_Demo" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		C9165397308F284800EE49B7 /* Build configuration list for PBXNativeTarget "Alarm_Live_Activity_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9165398308F284800EE49B7 /* Debug configuration for PBXNativeTarget "Alarm_Live_Activity_Demo" */,
+				C9165399308F284800EE49B7 /* Release configuration for PBXNativeTarget "Alarm_Live_Activity_Demo" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		C91653B9308F4D7D00EE49B7 /* Build configuration list for PBXNativeTarget "CountDownWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91653BA308F4D7D00EE49B7 /* Debug configuration for PBXNativeTarget "CountDownWidgetExtension" */,
+				C91653BB308F4D7D00EE49B7 /* Release configuration for PBXNativeTarget "CountDownWidgetExtension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9165384308F284600EE49B7 /* Project object */;
+	validationLevel = 1;
+}
